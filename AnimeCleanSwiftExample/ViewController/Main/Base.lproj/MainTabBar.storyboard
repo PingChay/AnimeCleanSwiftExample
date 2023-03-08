@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k3u-rf-tC3">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Anime-->
+        <scene sceneID="5jh-ie-Gnn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Anime" id="D2w-Fj-Hjz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5tN-0I-X27"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pqF-Wh-UyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1677" y="-144"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="nL6-EX-JNw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Favorite" id="YIV-Pc-AJk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Of4-eN-Qzc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Grv-Zx-sif" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839" y="727"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="Kbx-La-e5i">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="k3u-rf-tC3" customClass="MainTabBarController" customModule="AnimeCleanSwiftExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aT5-em-QlX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="W23-TE-ojH" kind="relationship" relationship="viewControllers" id="Ddm-B0-ilK"/>
+                        <segue destination="bk2-1D-fNf" kind="relationship" relationship="viewControllers" id="4W2-tL-hpg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bh-c4-Ycr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115" y="-2"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="lIz-9G-iUl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W23-TE-ojH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="gja-L3-kOv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Djm-ny-vcT">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="D2w-Fj-Hjz" kind="relationship" relationship="rootViewController" id="dkf-Qr-XzD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8FK-vP-w6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="-143"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="ZAa-ax-U48">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bk2-1D-fNf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="X0K-xP-hkH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i5o-KN-2C4">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YIV-Pc-AJk" kind="relationship" relationship="rootViewController" id="WL3-Vs-07z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7g-Cy-uJN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="727"/>
+        </scene>
+    </scenes>
+</document>
