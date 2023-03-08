@@ -17,11 +17,9 @@ class AuthRouter: AuthRoutingLogic {
 
     init(auth: Auth = .auth()) {
         self.auth = auth
-        aaaa
     }
 
     func swapRootWithCurrent() {
-        vbbb
         if auth.currentUser != nil {
             let mainTabBarController = MainTabBarController.viewController()
             SceneDelegate.main().swapRootViewController(with: mainTabBarController)
