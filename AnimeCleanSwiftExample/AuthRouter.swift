@@ -17,7 +17,6 @@ class AuthRouter: AuthRoutingLogic {
 
     init(auth: Auth = .auth()) {
         self.auth = auth
-        bbb
     }
 
     func swapRootWithCurrent() {
