@@ -38,7 +38,6 @@ extension AppDelegate {
         Auth.auth().addStateDidChangeListener { auth, user in
             let authRouter: AuthRoutingLogic = AuthRouter()
             authRouter.swapRootWithCurrent()
-            aaa
             bbb
         }
     }
