@@ -39,7 +39,6 @@ extension AppDelegate {
             let authRouter: AuthRoutingLogic = AuthRouter()
             authRouter.swapRootWithCurrent()
             aaa
-            bbb
         }
     }
 }
